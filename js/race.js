@@ -169,8 +169,8 @@ class Race {
             else statVal = r.cat.stats.run;
 
             // 3. Move
-            // Slow things down: /10 instead of /5
-            let moveSpeed = (statVal / 10) + (Math.random() * 0.5);
+            // Further slowed down for better enjoyment
+            let moveSpeed = (statVal / 15) + (Math.random() * 0.3);
 
             if (r.isPlayer) {
                 moveSpeed *= (0.5 + (this.game.player.energy / 200));
