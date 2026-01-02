@@ -153,7 +153,7 @@ class Minigame {
     }
 
     updateSpeed() {
-        this.gameSpeed += 0.005; // Progressive Speed
+        this.gameSpeed += 0.001; // Minimal Progressive Speed
         this.playerY += this.velocityY;
         this.velocityY += this.gravity;
 
@@ -498,7 +498,7 @@ class Minigame {
     }
 
     updateSwim() {
-        this.gameSpeed += 0.005; // Progressive Speed
+        this.gameSpeed += 0.001; // Minimal Progressive Speed
         this.playerY += this.velocityY;
 
         // Drag instead of gravity for swim
@@ -617,7 +617,7 @@ class Minigame {
         this.platforms.forEach(p => p.y += this.gameSpeed);
         this.monkeys.forEach(m => m.y += this.gameSpeed);
 
-        this.gameSpeed += 0.005; // Progressive Speed
+        this.gameSpeed += 0.001; // Minimal Progressive Speed
 
         this.playerY += this.velocityY;
         this.velocityY += this.gravity;
